@@ -25,12 +25,26 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 header > ul {
   flex: 1 1 600px;
   max-width: 50%;
+
   align-items: center;
   justify-content: space-around;
+}
+header >img{
+  flex: 1 1 400px;
+  max-width: 20%;
+  max-height: 80%;
+}
+header ul li a{
+  font-size: larger;
+}
+header ul li a:hover{
+  text-decoration: underline;
 }
 main {
   display: flex;
@@ -47,7 +61,36 @@ main > * {
 main > img {
   flex: 1 1 100%;
   max-height: 100%;
-  border-radius: 50%;
+  max-width: 40%;
+  border-radius: 33% 67% 30% 70% / 84% 72% 28% 16%;
+}
+main > ul li{
+  flex: 1 1 100px;
+  max-width: 20%;
+  border: thin solid #fff;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > ul li a{
+  flex: 1;
+  max-width: 100%;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+}
+main > ul li a:hover{
+  background-color: rgb(1, 106, 120);
+}
+main > h1{
+  font-size: 3rem;
 }
 footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+footer i{
+  font-size: 2rem;
 }
